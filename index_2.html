@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkillForge</title>
+	<link rel="stylesheet" href="style_2.css">
+	<link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+
+	<div class="arrow-up">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i>
+	  </div>
+	<header>
+		<div id="logo">
+			<span>SkillForge</span>
+		</div>
+		<div id="about">
+			<a href="index.html#overview" title="Головна" onclick="slowScroll('#top')">Головна</a>
+			<a href="#" title="Огляд" onclick="slowScroll('#main')">Огляд</a>
+			<a href="#" title="Ціни" onclick="slowScroll('#price')">Вартість</a>
+			<a href="##">+38(044)1112233</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h2>Курс з Front-end розробки в Києві</h2>
+		<h4>Опануйте професію front-end розробника для кар'єри в IT</h4>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Чому варто обрати Front-end?</h2>
+		</div>
+		<div class="text">
+			<span>Навчання front-end розробці варто вибрати через глобальну цифровізацію – сьогодні практично не залишилося компаній, які не вийшли в онлайн. І цей тренд тільки стрімко розвиватиметься. Сьогодні без фронтенд розробника не існує жодна компанія, яка має свій сайт. Такий фахівець однаково затребуваний у будь-якій країні світу.</span>
+		</div>
+	</div>
+
+	<section  class="wait">
+
+		<div  class="container">
+	
+			<h2 class="wait-title">
+				Програма курсу Front-end:
+			</h2>
+	
+			<div  class="wait-content">
+	
+				<div class="wait-image">
+					<img src="images/frontend-developer.png" alt="">
+				</div>
+	
+				<div class="wait-text">
+					<p>
+						<img src="images/chek.png" alt="">
+						Введення в мову розмітки. Мова розмітки гіпертексту HTML.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Кодування сторінки та meta-теги.
+					</p>
+	
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Аналогія HTML та CSS на прикладі лінійних та блокових тегів.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Практика: форматування тексту за допомогою CSS.
+					</p>
+	
+					<img src="images/chek.png" alt="">
+					Введення у JavaScript.
+				</p>
+
+				
+				<img src="images/chek.png" alt="">
+				Введення у jQuery. Події jQuery. Стилі та анімація. Взаємодія із DOM. AJAX та jQuery.
+			</p>
+
+			 <p>
+				<img src="images/chek.png" alt="">
+				Командна праця. Управління програмними проектами.
+			</p>
+				</div>
+	
+			</div>
+	
+		</div>
+	
+	</section>
+
+	<div id="price" class="wrap">
+		<h2 class="price-title">
+			Вартість навчання:
+		</h2>
+		<div class="box">
+		   <h1>Оплата частинами</h1>
+		   <p class="price">1000 ₴/м</p>
+		   <p class="about"> За умов оплати щомісяця
+			</p>
+		   <a class="button" href="index.html#contacts">Записатись</a>
+		 </div>
+		 <div class="box blue">
+		   <h1>Повна оплата</h1>
+		   <p class="price">900 ₴/м</p>
+		   <p class="about">За умов оплати всього курсу: 3600 ₴</p>
+		   <a class="button" href="index.html#contacts">Записатись</a>
+		 </div>
+	   </div>
+
+	  
+
+	  <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/?lang=uk"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		</div>
+		<p>Designed and built by student Ivan Lopatiuk</p>
+	  </section>
+	 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	
+	<script src="script.js"></script>
+	
+	
+	<script>
+	  function slowScroll(id) {
+		$('html, body').animate({
+		  scrollTop: $(id).offset().top
+		}, 500);
+	  }
+
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+	</script>
+
+	<script src="https://kit.fontawesome.com/9270deaef3.js" crossorigin="anonymous"></script>
+</body>
+</html>

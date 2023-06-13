@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkillForge</title>
+	<link rel="stylesheet" href="style_3.css">
+	<link rel="stylesheet" href="index.html">
+
+</head>
+<body>
+
+	<div class="arrow-up">
+		<a href="#"><i class="fa-solid fa-arrow-up"></i>
+	  </div>
+	<header>
+		<div id="logo">
+			<span>SkillForge</span>
+		</div>
+		<div id="about">
+			<a href="index.html#overview" title="Головна" onclick="slowScroll('#top')">Головна</a>
+			<a href="#" title="Огляд" onclick="slowScroll('#main')">Огляд</a>
+			<a href="#" title="Ціни" onclick="slowScroll('#price')">Вартість</a>
+			<a href="##">+38(044)1112233</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h2>Курс Бізнес-аналітика в Києві</h2>
+		<h4>Навчіться аналізувати бізнес-процеси в IT сфері, перетворювати слабкі сторони компаній на сильні.</h4>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Чому варто обрати курс бізнес-аналітика в IT?</h2>
+		</div>
+		<div class="text">
+			<span>
+				<br>1. Універсальність навичок: Бізнес-аналітики в ІТ мають широкий спектр навичок, які можна застосовувати в різних галузях. Ви зможете працювати як у технологічних компаніях, так і в інших сферах, де потрібна аналітика та стратегічне планування.
+				<br>2. Бізнес-аналітики в ІТ виступають посередниками між технічними командами та бізнес-клієнтами. Вони розуміють потреби бізнесу та можуть перетворити їх на конкретні вимоги до програмного забезпечення. Це дозволяє підвищити ефективність комунікації та забезпечити успішну реалізацію проектів.
+				<br>3. Професійний розвиток: Курс бізнес-аналітика в ІТ надає вам можливість отримати необхідні знання та навички для розвитку кар'єри в цій сфері.
+			</span>
+		</div>
+	</div>
+
+	<section  class="wait">
+
+		<div  class="container">
+	
+			<h2 class="wait-title">
+				Програма курсу Бізнес-аналітика:
+			</h2>
+	
+			<div  class="wait-content">
+	
+				<div class="wait-image">
+					<img src="images/Business_analyst.png" alt="">
+				</div>
+	
+				<div class="wait-text">
+					<p>
+						<img src="images/chek.png" alt="">
+						Цілі та завдання, які вирішують бізнес-аналітики.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Вимоги ринку для бізнес-аналітиків.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Збір даних та їх обробка.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Моделювання бізнес-процесів.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Пошук потужних та слабких сторін бізнесу.
+					</p>
+	
+					<p>
+						<img src="images/chek.png" alt="">
+						Прогнозування доходів та витрат бізнесу.
+					</p>
+
+					<p>
+						<img src="images/chek.png" alt="">
+						Пошук точок зростання бізнесу.
+					</p>
+				</div>
+	
+			</div>
+	
+		</div>
+	
+	</section>
+
+	<div id="price" class="wrap">
+		<h2 class="price-title">
+			Вартість навчання:
+		</h2>
+		<div class="box">
+		   <h1>Оплата частинами</h1>
+		   <p class="price">900 ₴/м</p>
+		   <p class="about"> За умов оплати щомісяця
+			</p>
+		   <a class="button" href="index.html#contacts">Записатись</a>
+		 </div>
+		 <div class="box blue">
+		   <h1>Повна оплата</h1>
+		   <p class="price">800 ₴/м</p>
+		   <p class="about">За умов оплати всього курсу: 4800 ₴</p>
+		   <a class="button" href="index.html#contacts">Записатись</a>
+		 </div>
+	   </div>
+
+	  
+
+	  <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/?lang=uk"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		</div>
+		<p>Designed and built by student Ivan Lopatiuk</p>
+	  </section>
+	 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	
+	<script src="script.js"></script>
+	
+	
+	<script>
+	  function slowScroll(id) {
+		$('html, body').animate({
+		  scrollTop: $(id).offset().top
+		}, 500);
+	  }
+
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+	</script>
+
+	<script src="https://kit.fontawesome.com/9270deaef3.js" crossorigin="anonymous"></script>
+</body>
+</html>

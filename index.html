@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SkillForge</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="index_1.html">
+	<link rel="stylesheet" href="index_2.html">
+	<link rel="stylesheet" href="index_3.html">
+	<link rel="stylesheet" href="index_4.html">
+
+</head>
+<body>
+	
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>SkillForge</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Головна" onclick="slowScroll('#top')">Головна</a>
+			<a href="#" title="Курси" onclick="slowScroll('#overview')">Доступні Курси</a>
+			<a href="#" title="Питання та відповіді" onclick="slowScroll('#faq')">FAQ</a>
+			<a href="#" title="Контакти" onclick="slowScroll('#contacts')">Контакти</a>
+			<a href="##">+38(044)1112233</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h2>SkillForge │ IT Academy</h2>
+		<h4>Тут розпочнеться твоя кар'єра в ІТ</h4>
+	</div>
+	
+	<div id="main">
+		<div class="intro">
+			<h2>Чому наші IT-курси найкращі?</h2>
+		</div>
+		<div class="text">
+			<span>Комп'ютерна Академія SkillForge працює з 2016 року.<br>Вже тоді ми випускали перших програмістів, веб-дизайнерів та інших IT-фахівців.<br>Сьогодні ми надаємо студентам навички, яких потребують роботодавці та сучасний бізнес — жодної сухої теорії та «води».<br>Роботодавцям не потрібні ваші знання, їм потрібна компетенція у вирішенні робочих завдань та налаштуванні бізнес-процесів.<br>Комп'ютерна Академія SkillForge — це комфортне середовище, в якому викладачі та студенти працюють у синергії для досягнення результату.</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Комплексні програми навчання</h2>
+		<h4>Опануйте нову професію за 3-6 місяців та почніть заробляти від 500$ в місяць</h4>
+	
+		<div class="img">
+			<a href="index_1.html"><img src="images/DevOps-Block.png" alt="" ></a>
+		</div>
+		<div class="img">
+			<a href="index_2.html"> <img src="images/Front-end block.png" alt=""></a>
+		</div>
+		<div class="img">
+			<a href="index_3.html"><img src="images/Business analyst-Block.png" alt=""></a>
+		</div>
+		<div class="img">
+			<a href="index_4.html"><img src="images/Cyber-block.png" alt=""></a>
+		</div>
+	</div>
+
+	<div id="faq">
+		<div>
+			<span class="heading">Я нічого не розумію в програмуванні. Чи зможу я навчатися на ваших курсах?</span>
+		  	<p>Так. Більшість курсів розрахована на новачків. Технічна освіта теж не обовʼязкова. Якщо у Вас є сумніви, або ж ви вагаєтесь запрошуємо пройти безкоштовний курс по "Основах програмування".</p>
+		  	<span class="heading">Які мінімальні знання та вимоги для початку навчання на курсах програмування?</span>
+		  	<p>Впевнене володіння персональним компʼютером.</p>
+		</div>
+		<div>
+			<span class="heading">Чи є у Вас пробні заняття?</span>
+			<p>Так, ти можеш прийти на безкоштовне пробне заняття до існуючої групи, попередньо записавшись за телефоном 38(093)765432.</p>
+			<span class="heading">Чим SkillForge відрізняється від інших навчальних закладів?</span>
+			<p>У нас найбільш адаптована програма під вимоги сучасного ринку ІТ. На наших курсах ти вивчаєш лише те, що потрібно для роботи. Мінімум теорії - максимум практики.<br>Окрім того, ми ведемо відеозапис усіх занять, проводимо безкоштовні консультації, навчаємо випускників писати резюме та успішно проходити співбесіди.</p>
+		</div>
+		<div>
+			<span class="heading">Чи потрібно носити ноутбук на заняття?</span>
+			<p>Не потрібно, оскільки усі аудиторії Logos IT Academy обладнані необхідною сучасною технікою та безпровідним інтернетом.</p>
+			<span class="heading">Як зазвичай проходить заняття?</span>
+			<p>Проводиться практичне заняття під час якого лектор показує на проекторі новий матеріал який слухачі відразу тестять. Конспекти ніхто не пише, презентації та теоретичний матеріал подається в електронній формі, домашні завдання також відсилаються на емейл.</p>
+		</div>
+	  </div>
+
+	
+	  <div id="contacts">
+		<h5>Обрати курс</h5>
+		<form id="form_input" action="inc.php" method="post">
+		  <label for="name">Ім'я <span>*</span></label><br>
+		  <input type="text" placeholder="Введіть ім'я" name="name" id="name"><br>
+		  <label for="text">Номер телефону <span>*</span></label><br>
+				<input type="text" placeholder="Введіть номер телефону" name="telephone" id="telephone"><br>
+				<label for="kurs">Обраний курс <span>*</span></label><br>
+				<textarea placeholder="Введіть назву курсу" name="kurs" id="kurs"></textarea><br>
+				<div id="mess_send" class="btn" type="submit">Відправити</div>
+		</form>
+	  </div>
+
+
+	  <section class="footer">
+		<div class="icons">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/?lang=uk"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		</div>
+		<p>© SkillForge | Designed and built by student Ivan Lopatiuk <br>2016-2023</p>
+	  </section>
+	 
+
+	<script src="main.js"></script>
+	<script src="https://kit.fontawesome.com/9270deaef3.js" crossorigin="anonymous"></script>
+</body>
+</html>
